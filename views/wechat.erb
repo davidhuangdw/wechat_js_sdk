@@ -122,10 +122,10 @@
 <script>
   wx.config({
     debug: false,
-    appId: 'wx896e08f0cac4122b',
-    timestamp: 1471594625,
-    nonceStr: 'david',
-    signature: '631a0d7066be8cd31853160cdcb7843bef117eaa',
+    appId: '<%= SETTINGS['app_id'] %>',
+    timestamp: <%= SETTINGS['timestamp'] %>,
+    nonceStr: '<%= SETTINGS['nonce_str'] %>',
+    signature: '<%= @signature %>',
     jsApiList: [
       'checkJsApi',
       'onMenuShareTimeline',
